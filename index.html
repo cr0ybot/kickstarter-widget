@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Kickstarter-widget by cr0ybot</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Kickstarter-widget</h1>
+        <p>Simple PHP web scraper for displaying what Kickstarter projects you are backing. Place it on your blog or website with an iframe.</p>
+        <p class="view"><a href="https://github.com/cr0ybot/kickstarter-widget">View the Project on GitHub <small>cr0ybot/kickstarter-widget</small></a></p>
+        <ul>
+          <li><a href="https://github.com/cr0ybot/kickstarter-widget/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/cr0ybot/kickstarter-widget/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/cr0ybot/kickstarter-widget">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>Kickstarter's official widgets only support single projects by clicking on the "embed" button under the intro video. I wanted to be able to show a smaller list of projects that I'm backing on my blog. So I wrote this simple PHP script to scrape my Kickstarter profile, and thought perhaps other people would find it useful.</p>
+
+<p>See it in action on my blog: <a href="http://blog.cr0ybot.com/">http://blog.cr0ybot.com/</a></p>
+
+<p>This widget utilizes the PHP Simple DOM Parser at <a href="http://simplehtmldom.sourceforge.net/">http://simplehtmldom.sourceforge.net/</a></p>
+
+<p>Kickstarter-widget will scrape Kickstarter's profile page for the requested amount of projects you are backing.</p>
+
+<p>The url takes 2 parameters:</p>
+
+<pre><code>u: username or string of numbers in the url at http://www.kickstarter.com/profiles/###username###/projects/backed
+n: (optional) number of projects to show in the list, 4 is default
+</code></pre>
+
+<p>ex: <a href="http://www.yourwebsite.com/kickstarter.php?u=username&amp;n=6">http://www.yourwebsite.com/kickstarter.php?u=username&amp;n=6</a></p>
+
+<p>If using an iframe to display widget, the height for n=1 should be 110.
+For the default n=4, height should be 290.
+For each n past 1, add 60 (for n=2 height=170, for n=3 height=230, etc).</p>
+
+<pre><code>height = n*60 + 50
+</code></pre>
+
+<p>Copyright (c) 2012 Cory Hughart, cr0ybot.com, under the MIT license</p>
+
+<p>This file is subject to the terms and conditions defined in file 'LICENSE.txt', which is part of this source code package.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/cr0ybot">cr0ybot</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-28243621-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
