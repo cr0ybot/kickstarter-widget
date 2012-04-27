@@ -8,13 +8,10 @@ This widget utilizes the PHP Simple DOM Parser at http://simplehtmldom.sourcefor
 Kickstarter-widget will scrape Kickstarter's profile page for the requested amount of projects you are backing.
 
 The url takes 2 parameters:
-'''
-    u: username or string of numbers in the url at
-    http://www.kickstarter.com/profiles/###username###/projects/backed
-    n: (optional) number of projects to show in the list, 4 is default
+u: username or string of numbers in the url at http://www.kickstarter.com/profiles/###username###/projects/backed
+n: (optional) number of projects to show in the list, 4 is default
     
-    ex: http://www.yourwebsite.com/kickstarter.php?u=username&n=6
-'''
+ex: http://www.yourwebsite.com/kickstarter.php?u=username&n=6
 
 If using an iframe to display widget, the height for n=1 should be 110.
 For the default n=4, height should be 290.
