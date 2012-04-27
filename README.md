@@ -1,6 +1,9 @@
 kickstarter-widget
 ==================
 
+###Project page:
+http://cr0ybot.github.com/kickstarter-widget/
+
 Simple PHP web scraper for displaying what Kickstarter projects you are backing. Place it on your blog or website with an iframe.
 
 Kickstarter's official widgets only support single projects by clicking on the "embed" button under the intro video. I wanted to be able to show a smaller list of projects that I'm backing on my blog. So I wrote this simple PHP script to scrape my Kickstarter profile, and thought perhaps other people would find it useful.
