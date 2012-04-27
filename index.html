@@ -11,6 +11,19 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28243621-2']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
   </head>
   <body>
     <div class="wrapper">
@@ -23,6 +36,9 @@
           <li><a href="https://github.com/cr0ybot/kickstarter-widget/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/cr0ybot/kickstarter-widget">Fork On <strong>GitHub</strong></a></li>
         </ul>
+        <!-- example -->
+        <p>Live Example:</p>
+        <iframe src="http://www.cr0ybot.com/widgets/kickstarter.php?u=cr0ybot&amp;n=5" height="350" width="270" scrolling="no" frameborder="0"></iframe>
       </header>
       <section>
         <p>Kickstarter's official widgets only support single projects by clicking on the "embed" button under the intro video. I wanted to be able to show a smaller list of projects that I'm backing on my blog. So I wrote this simple PHP script to scrape my Kickstarter profile, and thought perhaps other people would find it useful.</p>
@@ -57,17 +73,6 @@ For each n past 1, add 60 (for n=2 height=170, for n=3 height=230, etc).</p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-28243621-2");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
 
   </body>
 </html>
